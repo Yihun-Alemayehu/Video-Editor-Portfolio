@@ -275,3 +275,42 @@ span {
     font-size: 1.6rem;
     margin: 2rem 0 3rem;
  }
+
+ .btn-box.btns {
+    display: inline-block;
+ }
+
+ .video-row {
+    display: flex;
+    width: 100%;
+ }
+
+ .video-row .video-column video {
+    padding-left: 3rem;
+    padding-bottom: 1rem;
+    padding-top: 5rem;
+    width: 510px;
+    /* border: .2rem solid var(--main-color); */
+ }
+
+ .video-row .video-column h1{
+    padding-left: 3rem;
+ }
+
+ /* .title {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 3rem;
+    padding-right: 6rem;
+ } */
+
+ .services-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+ }
+
+ .services-row .services-column {
+    padding: 2rem;
+ }
