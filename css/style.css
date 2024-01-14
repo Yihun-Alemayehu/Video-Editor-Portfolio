@@ -372,3 +372,32 @@ span {
  .contact form .textarea-field textarea {
     resize: none;
  }
+
+ .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 9%;
+    background: var(--second-bg-color);
+ }
+
+ .footer-text p {
+    font-size: 1.6rem;
+ }
+
+ .footer-iconTop a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: .8rem;
+    background: var(--main-color);
+    border: .2rem solid var(--main-color);
+    border-radius: .6rem;
+ }
+
+ .footer-iconTop a i {
+    font-size: 2.4rem;
+    color: var(--bg-color);
+ }
