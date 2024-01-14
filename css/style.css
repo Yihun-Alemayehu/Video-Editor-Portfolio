@@ -104,3 +104,65 @@ section {
     font-size: 1.6rem;
     margin: 2rem 0 4rem;
 }
+
+.btn-box {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 34rem;
+    height: 5rem;
+}
+
+.btn-box .btn {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 15rem;
+    height: 100%;
+    background: var(--main-color);
+    border: .2rem solid var(--main-color);
+    border-radius: .8rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    color: var(--bg-color);
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.btn-box .btn:hover{
+    color: var(--main-color);
+}
+
+.btn-box .btn:nth-child(2) {
+    background: transparent;
+    color: var(--main-color);
+}
+
+.btn-box .btn:nth-child(2):hover {
+    color: var(--bg-color);
+}
+
+.btn-box .btn:nth-child(2)::before {
+    background: var(--main-color);
+}
+
+.btn-box .btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: var(--bg-color);
+    z-index: -1;
+    transition: .5s;
+}
+
+.btn-box .btn:hover::before {
+    width: 100%;
+    color: var(--text-color);
+}
+
